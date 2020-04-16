@@ -36,7 +36,7 @@ class CashRegister
   end
   
   def void_last_transaction
-    @total.pop()
+    @self.add_item.pop()
     @total
   end
 end

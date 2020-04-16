@@ -37,6 +37,6 @@ class CashRegister
   
   def void_last_transaction
     @cart.pop()
-    @cart.each { |item| item += price * quantity}
+    @cart.each {|item| item = self.total}
   end
 end
